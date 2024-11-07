@@ -1,0 +1,144 @@
+/* Reset margin dan padding untuk konsistensi tampilan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style untuk header */
+header {
+    background-image: url('./image/sma\ 2\ bantul.jpg'); /* Ganti dengan path gambar kamu */
+    background-size: cover; /* Agar gambar menutupi seluruh area header */
+    background-position: center; /* Posisikan gambar di tengah */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    
+        background-color: #572984;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    
+}
+
+header .logo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 10px; /* Menggeser lebih ke kiri */
+    top: 10px; /* Geser logo lebih ke atas */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+/* Style untuk navigasi menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Style untuk konten ekstrakurikuler */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6a1b9a;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+section ul li:hover {
+    background-color: #f3e5f5;
+    transform: translateY(-5px);
+}
+
+/* Style untuk tombol kembali */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #8e24aa;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section h3 {
+        font-size: 1.5rem;
+    }
+
+    section ul li {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
