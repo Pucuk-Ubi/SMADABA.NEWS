@@ -1,0 +1,87 @@
+/* Logo dan header */
+header {
+    background: linear-gradient(to top, #3b1a5b, #270847, #200539);
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(255, 249, 249, 0.2);
+}
+
+header .logo {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Flexbox pada Navigasi */
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li {
+    background: linear-gradient(to top, #3b1a5b, #270847);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(185, 182, 184);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-link {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Tombol Kembali */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb300;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e07d05;
+}
