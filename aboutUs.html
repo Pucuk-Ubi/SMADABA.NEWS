@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim kami</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tim Kami</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #000217;
-            color: #333;
+            color: #ffffff;
+            display: flex; /* Menambahkan flexbox */
+            flex-direction: column; /* Mengatur konten secara vertikal */
+            align-items: center; /* Konten di tengah secara horizontal */
+            justify-content: center; /* Konten di tengah secara vertikal */
+            min-height: 100vh; /* Tinggi penuh viewport */
         }
 
         h1 {
@@ -20,50 +24,47 @@
             color: #ffffff;
         }
 
-        /* Container untuk anggota */
         .member-gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom tetap */
-        gap: 10px; /* Jarak antar kartu */
-        padding: 15px;
-        justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 kolom per baris */
+            gap: 20px;
+            padding: 15px;
+            justify-content: center; /* Tengah secara horizontal */
         }
 
-
-        /* Style kartu anggota */
         .member-card {
-            background-color: #f1f1f1;
+            background-color: #1e1e2f;
+            border: 2px solid #ffb300;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             text-align: center;
             padding: 15px;
-            width: 200px;
-            transition: transform 0.3s;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .member-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
         }
 
-        /* Foto anggota */
         .member-img {
-            width: 200px;
+            width: 100%;
             height: 200px;
             object-fit: cover;
-            margin-bottom: 1px;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
 
-        /* Nama anggota */
         .member-name {
             font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 5px;
         }
 
-        /* Link Instagram */
         .member-ig {
             font-size: 0.9rem;
-            color: #0077b6;
+            color: #ffb300;
             text-decoration: none;
         }
 
@@ -72,64 +73,64 @@
         }
 
         .back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffb300;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 1.1rem;
-    margin-top: 20px;
-    text-align: center;
-}
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffb300;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.back-button:hover {
-    background-color: #e07d05; /* Efek hover */
-}
-.back-button-container {
-    display: flex;
-    justify-content: center;
-}
+        .back-button:hover {
+            background-color: #e07d05;
+        }
+
+        .back-button-container {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <h1>Tim Pengembang Website</h1>
     <div class="member-gallery">
-        
         <div class="member-card">
-            <img src="./Anggota/apan.jpg" alt="Foto Anggota 1" class="member-img">
+            <img src="./Anggota/apan.jpg" alt="Foto Shafwan Dhia Al Falah" class="member-img">
             <div class="member-name">Shafwan Dhia Al Falah</div>
-            <a href="https://www.instagram.com/shafwan.falah?igsh=ajI1emt0YWJuOW9t" class="member-ig" target="_blank">@shafwan.falah</a>
+            <a href="https://www.instagram.com/shafwan.falah" class="member-ig" target="_blank">@shafwan.falah</a>
         </div>
 
         <div class="member-card">
-            <img src="./Anggota/athaya.jpg" alt="Foto Anggota 2" class="member-img">
+            <img src="./Anggota/athaya.jpg" alt="Foto Athaya Safa Kurniawan" class="member-img">
             <div class="member-name">Athaya Safa Kurniawan</div>
-            <a href="https://www.instagram.com/athayasaf?igsh=a2tjYmNxcjY2MGVk" class="member-ig" target="_blank">@athayasaf</a>
+            <a href="https://www.instagram.com/athayasaf" class="member-ig" target="_blank">@athayasaf</a>
         </div>
 
         <div class="member-card">
-            <img src="./Anggota/recca.jpg" alt="Foto Anggota 3" class="member-img">
+            <img src="./Anggota/recca.jpg" alt="Foto Recca Nurmala Anggraini" class="member-img">
             <div class="member-name">Recca Nurmala Anggraini</div>
-            <a href="https://www.instagram.com/recc.san?igsh=cTd6eGxtczZldGY5" class="member-ig" target="_blank">@recc.san</a>
+            <a href="https://www.instagram.com/recc.san" class="member-ig" target="_blank">@recc.san</a>
         </div>
 
         <div class="member-card">
-            <img src="./Anggota/intan.jpg" alt="Foto Anggota 3" class="member-img">
+            <img src="./Anggota/intan.jpg" alt="Foto Intan Cahaya Putri Maharani" class="member-img">
             <div class="member-name">Intan Cahaya Putri Maharani</div>
-            <a href="https://www.instagram.com/_cain2_?igsh=MWtidmN5aDA3bTA3aw==" class="member-ig" target="_blank">@_cain_2</a>
+            <a href="https://www.instagram.com/_cain2_" class="member-ig" target="_blank">@_cain2_</a>
         </div>
 
         <div class="member-card">
-            <img src="./Anggota/mutiara.jpg" alt="Foto Anggota 3" class="member-img">
+            <img src="./Anggota/mutiara.jpg" alt="Foto Mutiara Aliefah" class="member-img">
             <div class="member-name">Mutiara Aliefah</div>
-            <a href="https://www.instagram.com/lieeefahh?igsh=YmFpeHg4bjZscmlj" class="member-ig" target="_blank">@lieeefahh</a>
+            <a href="https://www.instagram.com/lieeefahh" class="member-ig" target="_blank">@lieeefahh</a>
         </div>
 
         <div class="member-card">
-            <img src="./Anggota/pundi.jpg" alt="Foto Anggota 3" class="member-img">
+            <img src="./Anggota/pundi.jpg" alt="Foto Pundi Lidar Kinasih" class="member-img">
             <div class="member-name">Pundi Lidar Kinasih</div>
-            <a href="https://www.instagram.com/pundilidarrr?igsh=MWNqczd5OXdybXRtZQ==" class="member-ig" target="_blank">@pundilidarrr</a>
+            <a href="https://www.instagram.com/pundilidarrr" class="member-ig" target="_blank">@pundilidarrr</a>
         </div>
     </div>
 
