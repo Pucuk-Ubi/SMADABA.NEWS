@@ -13,6 +13,58 @@ body {
     padding: 0;
     background-color: #000217;
 }
+h2 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h1 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+a {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+p {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
 
 section h2 {
     color: rgb(255, 255, 255);
@@ -83,5 +135,5 @@ footer {
 .back-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Memberikan jarak atas */
+    
 }
