@@ -6,53 +6,151 @@
     <title>Prestasi SMADABA</title>
     <link rel="stylesheet" href="style.css">
     <style>
-  
-
         /* Style penataan kolom gambar */
         .profile-gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
+            gap: 1%; /* Jarak antar elemen lebih kecil */
+            margin-top: 20px;
         }
 
         .profile-card {
             background: linear-gradient(to top, #928d8d, #484749);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-            width: 150px;
-            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+            width: 15%; /* Lebar lebih kecil untuk memuat lebih banyak */
+            padding: 1%;
+            margin-top: 2%;
             transition: transform 0.3s;
         }
 
-        /* Animasi saat diarahkan */
         .profile-card:hover {
-            transform: scale(1.60);
-        }
+            transform: scale(1.6);
+    
+}
 
         .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 8px;
         }
 
         /* Responsive design untuk layar kecil */
-        @media (max-width: 600px) {
-            .profile-gallery {
-                flex-direction: column;
-                align-items: center;
+        @media (max-width: 768px) {
+            .profile-card {
+                width: 25%; /* Lebar sedang untuk layar tablet */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-card {
+                width: 45%; /* Lebar lebih besar untuk layar kecil */
             }
         }
 
         /* Tambahkan background-color ke elemen section */
         section {
-            background-color: #5500a941; /* Ganti dengan warna yang kamu inginkan */
-            padding: 20px; /* Beri padding agar tidak terlalu menempel */
-            border-radius: 15px; /* Opsional: Beri sedikit rounding di sudut */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Beri shadow */
+            background-color: #5500a941;
+            padding: 3%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        /* Penataan kolom gambar */
+.profile-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%; /* Jarak antar elemen */
+    margin-top: 20px;
+    overflow: visible; /* Pastikan overflow tidak menghalangi */
+}
+
+/* Gaya umum untuk card */
+.profile-card {
+    background: linear-gradient(to top, #928d8d, #484749);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    width: 18%; /* Lebar default lebih besar */
+    padding: 1%;
+    margin-top: 2%;
+    transition: transform 0.3s ease, z-index 0.3s ease, opacity 0.3s ease; /* Tambahkan transition opacity */
+    position: relative; /* Memastikan z-index bekerja */
+    opacity: 0; /* Mulai dengan opacity 0 untuk animasi fade-in */
+    animation: fadeIn 0.6s ease-in forwards; /* Terapkan animasi fade-in */
+}
+
+/* Efek hover untuk card */
+.profile-card:hover {
+    transform: scale(1.4);  /* Membesarkan card */
+    z-index: 10; /* Card yang membesar berada di atas */
+}
+
+/* Animasi masuk (fade-in) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    .profile-gallery .profile-card:nth-child(1) { animation-delay: 0s; }
+    .profile-gallery .profile-card:nth-child(2) { animation-delay: 0.1s; }
+    .profile-gallery .profile-card:nth-child(3) { animation-delay: 0.2s; }
+    .profile-gallery .profile-card:nth-child(4) { animation-delay: 0.3s; }
+    .profile-gallery .profile-card:nth-child(5) { animation-delay: 0.4s; }
+    .profile-gallery .profile-card:nth-child(6) { animation-delay: 0.5s; }
+    .profile-gallery .profile-card:nth-child(7) { animation-delay: 0.6s; }
+    .profile-gallery .profile-card:nth-child(8) { animation-delay: 0.7s; }
+    .profile-gallery .profile-card:nth-child(9) { animation-delay: 0.8s; }
+    .profile-gallery .profile-card:nth-child(10) { animation-delay: 0.9s; }
+    .profile-gallery .profile-card:nth-child(11) { animation-delay: 1s; }
+    .profile-gallery .profile-card:nth-child(12) { animation-delay: 1.1s; }
+    .profile-gallery .profile-card:nth-child(13) { animation-delay: 1.2s; }
+    .profile-gallery .profile-card:nth-child(14) { animation-delay: 1.3s; }
+    .profile-gallery .profile-card:nth-child(15) { animation-delay: 1.4s; }
+    .profile-gallery .profile-card:nth-child(16) { animation-delay: 1.5s; }
+    .profile-gallery .profile-card:nth-child(17) { animation-delay: 1.6s; }
+    .profile-gallery .profile-card:nth-child(18) { animation-delay: 1.7s; }
+    .profile-gallery .profile-card:nth-child(19) { animation-delay: 1.8s; }
+    .profile-gallery .profile-card:nth-child(20) { animation-delay: 1.9s; }
+    .profile-gallery .profile-card:nth-child(21) { animation-delay: 2s; }
+    .profile-gallery .profile-card:nth-child(22) { animation-delay: 2.1s; }
+
+    /* Gaya untuk gambar dalam card */
+    .profile-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+
+    /* Responsive design untuk layar kecil */
+    @media (max-width: 768px) {
+        .profile-card {
+            width: 30%; /* Lebar sedang untuk layar tablet */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .profile-card {
+            width: 60%; /* Lebar lebih besar untuk layar kecil */
+        }
+    }
+
+    /* Tambahkan background-color ke elemen section */
+    section {
+        background-color: #5500a941;
+        padding: 3%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
     </style>
 </head>
 <body>
@@ -64,7 +162,7 @@
 
     <!-- Galeri Foto Prestasi -->
     <section>
-        <h2>Prestasi yang tahun 2024</h2>
+        <h2>Prestasi yang diraih tahun 2024</h2>
         <div class="profile-gallery">
             <div class="profile-card">
                 <img src="./image/P1.jpg" alt="MPK" class="profile-img">
