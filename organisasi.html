@@ -6,8 +6,6 @@
     <title>Organisasi SMADABA</title>
     <link rel="stylesheet" href="style.css">
     <style>
-   
-
         /* Style penataan kolom */
         .profile-gallery {
             display: flex;
@@ -17,19 +15,20 @@
             margin-top: 30px;
         }
 
-        /* Animasi saat diarahkan */
         .profile-card:hover {
-            transform: scale(1.05);
-        }
+    transform: translateY(-10px); /* Efek angkat sedikit */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 
         .profile-img {
             width: 85px;
             height: 85px;
             border-radius: 50%;
+            margin-top: 10px;
             margin-bottom: 20px;
             transition: transform 0.3s ease-in-out;
-}
-
+        }
 
         .profile-name {
             font-size: 0.9rem;
@@ -45,31 +44,40 @@
         /* warna kolom */
         .profile-card {
             text-align: center;
-            background: linear-gradient(to left, #928d8d, #494747);
+            background: linear-gradient(to left, #e1e1e1, #b0b0b0);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
             width: 140px;
-            padding: 10px;
+            padding: 1px;
+
             transition: transform 0.3s;
         }
 
-
-        /* Responsive design untuk layar kecil */
-        @media (max-width: 600px) {
-            .profile-gallery {
-                flex-direction: column;
-                align-items: center;
-            }
+        /* Link keseluruhan profile card */
+        .profile-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
         }
+        @media (max-width: 600px) {
+    .profile-gallery {
+        flex-wrap: wrap;
+        justify-content: space-between; /* Elemen tersebar merata */
+    }
+    .profile-card {
+        flex: 1 1 30%; /* Setiap elemen mengambil sekitar 30% lebar */
+        max-width: 30%; /* Pastikan elemen tidak lebih dari 30% */
+    }
+}
 
-        
 
         /* Tambahkan background-color ke elemen section */
         section {
-            background-color: #5500a941; /* Ganti dengan warna yang kamu inginkan */
-            padding: 20px; /* Beri padding agar tidak terlalu menempel */
-            border-radius: 15px; /* Opsional: Beri sedikit rounding di sudut */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Beri shadow */
+            background-color: #5500a941;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
     </style>
@@ -89,113 +97,113 @@
             <div class="profile-card">
                 <a href="https://www.instagram.com/exscompk?igsh=OTNmcjBuMXk4c2kz" target="_blank">
                     <img src="./image/mpk.jpg" alt="Majelis Perwakilan Kelas" class="profile-img">
+                    <div class="profile-name">Majelis Perwakilan Kelas (MPK)</div>
+                    <p class="profile-description">Wadah aspirasi siswa yang berfungsi sebagai mitra OSIS dalam mengontrol kinerja dan membantu kebijakan OSIS.</p>
                 </a>
-                <div class="profile-name">Majelis Perwakilan Kelas (MPK)</div>
-                <p class="profile-description">Wadah aspirasi siswa yang berfungsi sebagai mitra OSIS dalam mengontrol kinerja dan membantu kebijakan OSIS.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/eventsmadaba_?igsh=NWJxeDh1Z3VwZWhx" target="_blank">
                     <img src="./image/osis.png" alt="OSIS" class="profile-img">
+                    <div class="profile-name">Organisasi Intra Sekolah (OSIS)</div>
+                    <p class="profile-description">Organisasi utama di sekolah yang bertugas mengelola berbagai kegiatan siswa seperti event, kompetisi, dan lainnya.</p>
                 </a>
-                <div class="profile-name">Organisasi Intra Sekolah (OSIS)</div>
-                <p class="profile-description">Organisasi utama di sekolah yang bertugas mengelola berbagai kegiatan siswa seperti event, kompetisi, dan lainnya.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.insta" target="_blank">
                     <img src="./image/smadaba.jpg" alt="Dewan Upacara" class="profile-img">
+                    <div class="profile-name">Dewan Upacara (DU)</div>
+                    <p class="profile-description">Bertanggung jawab atas pelaksanaan upacara bendera dan kegiatan kenegaraan di sekolah.</p>
                 </a>
-                <div class="profile-name">Dewan Upacara (DU)</div>
-                <p class="profile-description">Bertanggung jawab atas pelaksanaan upacara bendera dan kegiatan kenegaraan di sekolah.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/pramuka_smadaba?igsh=dGpqc25xenRwZ2Zn" target="_blank">
                     <img src="./image/Pramuka.png" alt="Pramuka" class="profile-img">
+                    <div class="profile-name">Dewan Ambalan (DA) "Diponegoro & RA Kartini"</div>
+                    <p class="profile-description">Mewadahi kegiatan kepramukaan yang berfokus pada pengembangan diri dan kepemimpinan siswa.</p>
                 </a>
-                <div class="profile-name">Dewan Ambalan (DA) "Diponegoro & RA Kartini"</div>
-                <p class="profile-description">Mewadahi kegiatan kepramukaan yang berfokus pada pengembangan diri dan kepemimpinan siswa.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/rohisalfalaq_?igsh=aThmaXJqajVyNGxw" target="_blank">
                     <img src="./image/rohis.png" alt="Rohani Islam" class="profile-img">
+                    <div class="profile-name">Rohani Islam (Rohis) "Al-Falaq"</div>
+                    <p class="profile-description">Mengelola kegiatan keagamaan Islam di sekolah, seperti kajian, doa bersama, dan lain-lain.</p>
                 </a>
-                <div class="profile-name">Rohani Islam (Rohis) "Al-Falaq"</div>
-                <p class="profile-description">Mengelola kegiatan keagamaan Islam di sekolah, seperti kajian, doa bersama, dan lain-lain.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/exscopmr?igsh=MWExZXN0OGh2cTEyag==" target="_blank">
                     <img src="./image/logopmr.png" alt="PMR" class="profile-img">
+                    <div class="profile-name">Palang Merah Remaja (PMR) "UNIDA"</div>
+                    <p class="profile-description">Bergerak di bidang kesehatan dan kemanusiaan, mengajarkan keterampilan pertolongan pertama.</p>
                 </a>
-                <div class="profile-name">Palang Merah Remaja (PMR) "UNIDA"</div>
-                <p class="profile-description">Bergerak di bidang kesehatan dan kemanusiaan, mengajarkan keterampilan pertolongan pertama.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/research.smadaba?igsh=MTR2YTg0dmt3enBiaw==" target="_blank">
                     <img src="./image/SRC.png" alt="SRC" class="profile-img">
+                    <div class="profile-name">SMADABA Research Community (SRC)</div>
+                    <p class="profile-description">Kelompok penelitian yang mendorong siswa untuk mengembangkan keterampilan riset dan inovasi.</p>
                 </a>
-                <div class="profile-name">SMADABA Research Community (SRC)</div>
-                <p class="profile-description">Kelompok penelitian yang mendorong siswa untuk mengembangkan keterampilan riset dan inovasi.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/pikr_peraya" target="_blank">
                     <img src="./image/PIK R.png" alt="PIK R Peraya" class="profile-img">
+                    <div class="profile-name">PIK R Peraya</div>
+                    <p class="profile-description">Mengelola kegiatan pendidikan remaja mengenai kesehatan reproduksi dan pengembangan diri.</p>
                 </a>
-                <div class="profile-name">PIK R Peraya</div>
-                <p class="profile-description">Mengelola kegiatan pendidikan remaja mengenai kesehatan reproduksi dan pengembangan diri.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.in4" target="_blank">
                     <img src="./image/smadaba.jpg" alt="Dewan Tonti" class="profile-img">
+                    <div class="profile-name">Dewan Tonti (DT)</div>
+                    <p class="profile-description">Mengatur kegiatan Paskibra dan disiplin upacara bendera di sekolah.</p>
                 </a>
-                <div class="profile-name">Dewan Tonti (DT)</div>
-                <p class="profile-description">Mengatur kegiatan Paskibra dan disiplin upacara bendera di sekolah.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.Instagram.com/rokris.smadaba" target="_blank">
                     <img src="./image/rokris.png" alt="Rohani Kristiani" class="profile-img">
+                    <div class="profile-name">Rohani Kristiani (ROKRIS)</div>
+                    <p class="profile-description">Mengelola kegiatan kerohanian Kristiani di sekolah, seperti ibadah dan pembinaan rohani.</p>
                 </a>
-                <div class="profile-name">Rohani Kristiani (ROKRIS)</div>
-                <p class="profile-description">Mengelola kegiatan kerohanian Kristiani di sekolah, seperti ibadah dan pembinaan rohani.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagr" target="_blank">
                     <img src="./image/smadaba.jpg" alt="Prapanca Muda" class="profile-img">
+                    <div class="profile-name">Prapanca Muda</div>
+                    <p class="profile-description">Wadah kreativitas dan minat siswa dalam seni dan budaya, khususnya dalam musik tradisional.</p>
                 </a>
-                <div class="profile-name">Prapanca Muda</div>
-                <p class="profile-description">Wadah kreativitas dan minat siswa dalam seni dan budaya, khususnya dalam musik tradisional.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.co" target="_blank">
                     <img src="./image/smadaba.jpg" alt="PKS" class="profile-img">
+                    <div class="profile-name">Patroli Keamanan Sekolah (PKS)</div>
+                    <p class="profile-description">Bertugas menjaga keamanan dan ketertiban sekolah selama kegiatan belajar mengajar.</p>
                 </a>
-                <div class="profile-name">Patroli Keamanan Sekolah (PKS)</div>
-                <p class="profile-description">Bertugas menjaga keamanan dan ketertiban sekolah selama kegiatan belajar mengajar.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.instagram.com/revolutio.smadaba?igsh=MWt1djVnZnRhOXF3aQ==" target="_blank">
                     <img src="./image/Jurnalistik.png" alt="Jurnalistik" class="profile-img">
+                    <div class="profile-name">Jurnalistik</div>
+                    <p class="profile-description">Bertanggung jawab atas publikasi berita dan artikel sekolah melalui media cetak dan digital.</p>
                 </a>
-                <div class="profile-name">Jurnalistik</div>
-                <p class="profile-description">Bertanggung jawab atas publikasi berita dan artikel sekolah melalui media cetak dan digital.</p>
             </div>
 
             <div class="profile-card">
                 <a href="https://www.Instagram.com/exsco.paragita" target="_blank">
                     <img src="./image/Para.png" alt="Paragita" class="profile-img">
+                    <div class="profile-name">Paragita</div>
+                    <p class="profile-description">Kelompok paduan suara yang tampil di berbagai acara sekolah dan kompetisi paduan suara.</p>
                 </a>
-                <div class="profile-name">Paragita</div>
-                <p class="profile-description">Kelompok paduan suara yang tampil di berbagai acara sekolah dan kompetisi paduan suara.</p>
             </div>
 
         </div>
@@ -205,6 +213,5 @@
     <div class="back-button-container">
         <a href="halaman-jelajahi.html" class="back-button">Kembali</a>
     </div>
-
 </body>
 </html>
