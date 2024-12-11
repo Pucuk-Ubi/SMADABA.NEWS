@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
+
+        
+@keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         /* Style untuk section */
 section {
     padding: 30px;
     margin: 20px;
-    background-color: #878488; /* Warna putih untuk kontras */
+    background-color: #e6e5e6; /* Warna putih untuk kontras */
     border-radius: 10px; /* Sudut yang membulat */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kesan terangkat */
     max-width: 800px;
@@ -31,7 +44,7 @@ ul {
 }
 
 section li {
-    background-color: #696869; /* Warna latar belakang list */
+    background-color: #d2d0d2; /* Warna latar belakang list */
     margin: 8px 0;
     padding: 10px;
     border-radius: 8px; /* Sudut membulat pada list */
@@ -48,6 +61,7 @@ section li::before {
     margin-right: 10px;
     display: inline-block;
 }
+
 
 
     </style>

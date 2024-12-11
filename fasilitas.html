@@ -6,52 +6,60 @@
     <title>Fasilitas SMADABA</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
 
-        
-        
         /* Style untuk section */
-section {
-    padding: 30px;
-    margin: 20px;
-    background-color: #878488; /* Warna putih untuk kontras */
-    border-radius: 10px; /* Sudut yang membulat */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kesan terangkat */
-    max-width: 800px;
-    margin: 40px auto; /* Membuat section berada di tengah */
-}
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: #e6e5e6; /* Warna putih untuk kontras */
+            border-radius: 10px; /* Sudut yang membulat */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kesan terangkat */
+            max-width: 800px;
+            margin: 40px auto; /* Membuat section berada di tengah */
+            animation: slideInFromLeft 1s ease-out; /* Tambahkan animasi */
+        }
 
-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #000000; /* Warna teks heading */
-}
+        section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #000000; /* Warna teks heading */
+        }
 
         /* Styling list ekstrakurikuler */
-ul {
-    list-style-type: none; /* Menghilangkan bullet points */
-    padding: 0;
-}
+        ul {
+            list-style-type: none; /* Menghilangkan bullet points */
+            padding: 0;
+        }
 
-section li {
-    background-color: #696869; /* Warna latar belakang list */
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 8px; /* Sudut membulat pada list */
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
-}
+        section li {
+            background-color: #d2d0d2; /* Warna latar belakang list */
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px; /* Sudut membulat pada list */
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
+        }
 
-section li::before {
-    content: "•"; /* Tambahkan bullet point yang lebih stylish */
-    color: #000000;
-    font-size: 1.5rem;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-
+        section li::before {
+            content: "•"; /* Tambahkan bullet point yang lebih stylish */
+            color: #000000;
+            font-size: 1.5rem;
+            margin-right: 10px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -62,56 +70,48 @@ section li::before {
         <h1>FASILITAS SMADABA</h1>
     </header>
 
-    
-
     <section> 
-            <h3>Fasilitas-Fasilitas :</h3>
-            <ul>
-                <li>Ruang Teori/Kelas</li>
-                <li>Laboratorium Kimia</li>
-                <li>Laboratorium Fisika</li>
-                <li>Laboratorium Biologi</li>
-                <li>Laboratorium Bahasa</li>
-                <li>Laboratorium Komputer</li>
-                <li>Aula</li>
-                <li>Ruang Pertemuan Kedap Suara</li>
-                <li>Ruang Perpustakaan</li>
-                <li>Ruang UKS</li>
-                <li>Gazebo</li>
-                <li>Joglo</li>
-                <li>Ruang BK</li>
-                <li>Ruang Kepala Sekolah</li>
-                <li>Ruang Guru</li>
-                <li>Ruang TU</li>
-                <li>Ruang Ibadah (Masjid)</li>
-                <li>Kantor Satpam</li>
-                <li>Lapangan Basket</li>
-                <li>Lapangan Voli</li>
-                <li>Lapangan Bulu Tangkis</li>
-                <li>Kantin</li>
-                <li>Koperasi Siswa</li>
-                <li>Koperasi Siswa dan Guru</li>
-                <li>Parkir Sepeda Motor dan Mobil</li>
-                <li>Rumah Penjaga Sekolah</li>
-                <li>Kamar Mandi</li>
-                <li>Ruang Musik</li>
-                <li>Ruang Tari</li>
-                <li>Ruang Broadcast</li>
-                <li>Ruang Karawitan</li>
-                <li>Ruang OSIS</li>
-                <li>Ruang SRC</li>
-                <li>Ruang Moving</li>
-                <li>Ruang Arsip</li>
-            </ul>
+        <h3>Fasilitas-Fasilitas :</h3>
+        <ul>
+            <li>Ruang Teori/Kelas</li>
+            <li>Laboratorium Kimia</li>
+            <li>Laboratorium Fisika</li>
+            <li>Laboratorium Biologi</li>
+            <li>Laboratorium Bahasa</li>
+            <li>Laboratorium Komputer</li>
+            <li>Aula</li>
+            <li>Ruang Referensi</li>
+            <li>Ruang Perpustakaan</li>
+            <li>Ruang UKS</li>
+            <li>Gazebo</li>
+            <li>Joglo</li>
+            <li>Ruang BK</li>
+            <li>Ruang Kepala Sekolah</li>
+            <li>Ruang Guru</li>
+            <li>Ruang TU</li>
+            <li>Ruang Ibadah (Masjid)</li>
+            <li>Kantor Satpam</li>
+            <li>Lapangan Basket</li>
+            <li>Lapangan Voli</li>
+            <li>Kantin</li>
+            <li>Koperasi Siswa</li>
+            <li>Parkir Sepeda Motor dan Mobil</li>
+            <li>Pos Satpam</li>
+            <li>Kamar Mandi</li>
+            <li>Ruang Musik</li>
+            <li>Ruang Tari</li>
+            <li>Ruang Broadcast</li>
+            <li>Ruang Karawitan</li>
+            <li>Ruang OSIS</li>
+            <li>Ruang SRC</li>
+            <li>Ruang Moving</li>
+            <li>Ruang Arsip</li>
+        </ul>
     </section>
-
-    
 
     <!-- Tombol Kembali -->
     <div class="back-button-container">
         <a href="halaman-jelajahi.html" class="back-button">Kembali</a>
     </div>
-
-
 </body>
 </html>
